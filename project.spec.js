@@ -16,9 +16,9 @@ import {
   isUpperCase,
   elementInArray,
   reverseString,
-} from "./assessment";
+} from "./project";
 
-import { generateIntegersArray, noZeroes } from "./debug-assessment";
+import { generateIntegersArray, noZeroes } from "./debug-project";
 
 describe("sumOdds(numbers)", () => {
   test("returns the sum of only the ODD numbers.", () => {

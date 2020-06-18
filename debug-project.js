@@ -10,11 +10,12 @@
  */
 function generateIntegersArray(firstNumber, lastNumber) {
   const integersArray = [];
-  whille (firstNumber < lastNumber)
+  while (firstNumber <= lastNumber) {
     integersArray.push(firstNumber);
-    lastNumber++;
+    firstNumber++;
+  }
 
-  return IntegersArray;
+  return integersArray;
 }
 
 /**
@@ -29,18 +30,19 @@ function generateIntegersArray(firstNumber, lastNumber) {
  *
  */
 function noZeroes(numberString) {
-  whil (numberString.startsWith("0")) {
-    numberString.slice(0, -1);
+  let strings = numberString;
+  while (strings.startsWith("0")) {
+    strings = strings.slice(1);
   }
 
-  while (numberString.endswith("0") {
-    numberString.slice[1];
+  while (strings.endsWith("0")) {
+    strings = strings.slice(0, -1);
   }
-  numberString;
+  return strings;
 }
 
-// console.log(generateIntegersArray(3, 7));
-// console.log(noZeroes("001100"));
+//console.log(generateIntegersArray(3, 7));
+console.log(noZeroes("000110000"));
 module.exports = {
   generateIntegersArray,
   noZeroes,
